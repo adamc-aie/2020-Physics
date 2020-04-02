@@ -36,12 +36,13 @@ public:
 
 	glm::vec4 color = glm::vec4(1.0f);
 
+
 	shape get_shape() const
 	{
 		return shape_type;
 	}
 
-	float elasticity = 0.5f;
+	float elasticity = 0.7f;
 };
 
 #endif // !

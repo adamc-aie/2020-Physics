@@ -78,10 +78,11 @@ bool Application2D::startup()
 	m_physics_scene->add_object(rhdu);
 
 	//aligned_bounding_box* aabb = new aligned_bounding_box(glm::vec2(0.1f, -2.0f));
-	for (int x = 0; x < 10; ++x)
+	for (int x = 0; x <10; ++x)
 	{
 		for (int y = 0; y < 10; ++y)
 		{
+			//m_physics_scene->add_object(new aligned_bounding_box(glm::vec2(-8 + x, 3 - y)));
 			m_physics_scene->add_object(new circle(glm::vec2(-8 + x, 3 - y)));
 		} 
 	}
